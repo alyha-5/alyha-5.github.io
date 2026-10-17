@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Personal website and design portfolio by alyha-5.">
+  <title>alyha-5 | Design Portfolio</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #49382D;
+      background: #FCF8F0;
+      line-height: 1.7;
+    }
+
+    header {
+      padding: 18px 7%;
+      background: #246B3B;
+      color: #FFFFFF;
+    }
+
+    nav {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #FFFFFF;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 14px;
+    }
+
+    .intro {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 80px 7% 60px;
+    }
+
+    .eyebrow {
+      font-size: 12px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #8B654C;
+    }
+
+    h1 {
+      font-size: clamp(38px, 7vw, 68px);
+      line-height: 1.1;
+      margin: 18px 0;
+      font-weight: 600;
+    }
+
+    .intro p {
+      max-width: 600px;
+      color: #6C5B4D;
+    }
+
+    .portfolio {
+      padding: 64px 7%;
+      background: #F3E5CD;
+    }
+
+    .portfolio-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      font-size: clamp(28px, 4vw, 42px);
+      line-height: 1.2;
+      margin: 12px 0;
+    }
+
+    .description {
+      max-width: 760px;
+      margin-bottom: 28px;
+    }
+
+    .pdf-frame {
+      width: 100%;
+      height: 85vh;
+      min-height: 600px;
+      border: 0;
+      display: block;
+      background: #FFFFFF;
+      border-radius: 8px;
+    }
+
+    .pdf-link {
+      display: inline-block;
+      margin-top: 18px;
+      color: #75472F;
+      text-underline-offset: 4px;
+    }
+
+    footer {
+      padding: 28px 7%;
+      font-size: 13px;
+      color: #75685C;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      nav a {
+        margin-left: 0;
+        margin-right: 16px;
+      }
+
+      .intro {
+        padding-top: 54px;
+      }
+
+      .portfolio {
+        padding: 44px 5%;
+      }
+
+      .pdf-frame {
+        height: 70vh;
+        min-height: 450px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <strong>alyha-5</strong>
+      <div>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="https://github.com/alyha-5"
+           target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro" id="about">
+      <p class="eyebrow">Personal Website & Learning Space</p>
+      <h1>Design, curiosity<br>and exploration.</h1>
+      <p>
+        Just someone curious about design and the web.
+        Slowly learning, slowly recording.
+      </p>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <div class="portfolio-inner">
+        <p class="eyebrow">Selected Project</p>
+        <h2>Dongba Script</h2>
+        <p class="description">
+          An AR-based learning experience for exploring Naxi
+          pictographic writing and cultural heritage.
+          Through interactive 3D character assembly and animation,
+          the project connects script learning with cultural discovery.
+        </p>
+
+        <iframe
+          class="pdf-frame"
+          src="./dongba-portfolio.pdf"
+          title="Dongba Script Design Portfolio">
+        </iframe>
+
+        <a class="pdf-link"
+           href="./dongba-portfolio.pdf"
+           target="_blank" rel="noopener noreferrer">
+          Open portfolio PDF in a new tab ↗
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © alyha-5 · Personal Website & Design Portfolio
+  </footer>
+</body>
+</html>
